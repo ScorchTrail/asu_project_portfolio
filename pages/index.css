@@ -1,0 +1,37 @@
+/* ===========================
+   PORTFOLIO CSS - MAIN IMPORT HUB
+   ===========================
+   This file imports all modular CSS files
+   organized in the blocks folder
+   ===========================
+*/
+
+/* Variables, Fonts, Reset & Utilities */
+@import url("../blocks/variables.css");
+
+/* Navigation Bar */
+@import url("../blocks/navbar.css");
+
+/* Hero Section */
+@import url("../blocks/hero.css");
+
+/* About Section */
+@import url("../blocks/about.css");
+
+/* Skills Section */
+@import url("../blocks/skills.css");
+
+/* Experience Section */
+@import url("../blocks/experience.css");
+
+/* Projects Section */
+@import url("../blocks/projects.css");
+
+/* Hobbies Section */
+@import url("../blocks/hobbies.css");
+
+/* Footer / Contact Section */
+@import url("../blocks/footer.css");
+
+/* Responsive Design */
+@import url("../blocks/responsive.css");

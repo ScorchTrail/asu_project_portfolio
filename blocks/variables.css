@@ -1,0 +1,143 @@
+@import url("../vendor/normalize.css");
+@import url("../vendor/fonts.css");
+:root {
+  --bg-color: #edf1d6;
+  --light-accent: #9dc08b;
+  --dark-accent: #609966;
+  --text-color: #40513b;
+  --white: #ffffff;
+  --shadow: 0 4px 15px rgba(64, 81, 59, 0.1);
+  --transition: all 0.3s ease;
+  --font-heading: "Cinzel", serif;
+  --font-decorative: "Cinzel Decorative", serif;
+  --font-body: "Quattrocento", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto 2rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.section-title {
+  font-size: 1.953125rem;
+  color: var(--dark-accent);
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  font-weight: bold;
+  font-family: var(--font-decorative);
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 1.953125rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 3.051757812rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}

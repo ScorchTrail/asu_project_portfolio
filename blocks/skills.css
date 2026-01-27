@@ -1,0 +1,156 @@
+.skills {
+  padding: 2rem 1rem;
+  background-color: var(--bg-color);
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills__subtitle {
+  color: var(--light-accent);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 2rem;
+}
+
+.skills__category {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.skills__category-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skills__icon {
+  width: 45px;
+  height: 45px;
+  background-color: var(--light-accent);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+.skills__category h3 {
+  color: var(--dark-accent);
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.skills__category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills__category li {
+  padding: 0.4rem 0;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skills__category li::before {
+  content: "✓";
+  color: var(--light-accent);
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .skills {
+    padding: 3rem 1.5rem;
+    min-height: auto;
+  }
+
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .skills__category {
+    padding: 2rem;
+  }
+
+  .skills__category h3 {
+    font-size: 1.25rem;
+  }
+
+  .skills__icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .skills {
+    padding: 4rem 2rem;
+    min-height: 100vh;
+  }
+
+  .skills__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .skills__category {
+    padding: 2rem;
+  }
+
+  .skills__category h3 {
+    font-size: 1.5625rem;
+  }
+
+  .skills__icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .skills__category li {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .skills {
+    padding: 6rem 4rem;
+  }
+
+  .skills__category h3 {
+    font-size: 1.5625rem;
+  }
+
+  .skills__category li {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Vedant Patel | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <link rel="stylesheet" href="blocks/hobbies.css" />
+    <link rel="stylesheet" href="blocks/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__logo">
+          <img
+            src="images/favicon.svg"
+            alt="VP Logo"
+            class="navbar__logo-image"
+          />
+        </div>
+        <ul class="navbar__menu">
+          <li><a href="#main" class="navbar__link">Main</a></li>
+          <li><a href="#about" class="navbar__link">About</a></li>
+          <li><a href="#skills" class="navbar__link">Skills</a></li>
+          <li><a href="#experience" class="navbar__link">Experience</a></li>
+          <li><a href="#projects" class="navbar__link">Projects</a></li>
+          <li><a href="#hobbies" class="navbar__link">Hobbies</a></li>
+          <li><a href="#contact" class="navbar__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section id="main" class="main">
+      <div class="main__container">
+        <div class="main__image">
+          <div class="main__profile-wrapper">
+            <img
+              src="images/profile-image.jpg"
+              alt="Vedant Patel"
+              class="main__profile-image"
+            />
+            <div class="main__age-card">
+              <div class="main__age-number" id="ageDisplay">22</div>
+            </div>
+          </div>
+        </div>
+        <div class="main__content">
+          <h1 class="main__name">
+            Vedant <span class="main__name--highlight">Patel</span>
+          </h1>
+          <p class="main__headline">
+            Software Engineer & UI/UX Designer by day.<br />DND Nerd & Amateur
+            Chef by night.
+          </p>
+          <div class="main__buttons">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--secondary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+      <div class="main__scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <p class="about__subtitle">GET TO KNOW ME</p>
+        <h2 class="section-title">My Story</h2>
+        <div class="about__wrapper">
+          <div class="about__rectangle">
+            <p class="about-text">
+              Born and raised in India, I moved to the United States and am now
+              a proud citizen. After spending time in Kentucky, I currently call
+              Arizona home. I am a dedicated lifelong learner, currently
+              balancing my university degree at ASU with an intensive Software
+              Engineering Bootcamp at TripleTen to master full-stack web
+              development. When I'm not coding, I am a DND nerd, an amateur
+              chef, and a karaoke enthusiast.
+            </p>
+          </div>
+          <div class="about__cards">
+            <div class="about__card">
+              <div class="about__card-icon">
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <div class="about__card-content">
+                <h3>Location</h3>
+                <p>Arizona, United States</p>
+              </div>
+            </div>
+            <div class="about__card">
+              <div class="about__card-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="about__card-content">
+                <h3>Education</h3>
+                <p>ASU Student & TripleTen Bootcamp</p>
+              </div>
+            </div>
+            <div class="about__card">
+              <div class="about__card-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="about__card-content">
+                <h3>Passions</h3>
+                <p>Coding, Cooking, DND, Karaoke</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <p class="skills__subtitle">WHAT I CAN DO</p>
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills__grid">
+          <div class="skills__category">
+            <div class="skills__category-header">
+              <div class="skills__icon">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h3>Media Tools</h3>
+            </div>
+            <ul>
+              <li>Office Tools</li>
+              <li>Adobe XD</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+            </ul>
+          </div>
+          <div class="skills__category">
+            <div class="skills__category-header">
+              <div class="skills__icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Programming Tools</h3>
+            </div>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>HTML & CSS</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+          <div class="skills__category">
+            <div class="skills__category-header">
+              <div class="skills__icon">
+                <i class="fas fa-compass-drafting"></i>
+              </div>
+              <h3>CAD Tools</h3>
+            </div>
+            <ul>
+              <li>Solidworks</li>
+              <li>Inventor</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="experience__header">
+          <p class="experience__subtitle">MY JOURNEY SO FAR</p>
+          <h2 class="section-title">Education & Experience</h2>
+        </div>
+        <div class="experience__layout">
+          <div class="experience__category">
+            <h3 class="experience__category-title">Education</h3>
+            <div class="experience__grid experience__grid--1x2">
+              <div class="experience__card">
+                <div class="experience__card-header">
+                  <div class="experience__icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div>
+                    <h4>Arizona State University</h4>
+                  </div>
+                </div>
+                <p class="experience__date">August, 2025 - Current</p>
+                <p class="experience__role">Online Student</p>
+                <p class="experience__detail">
+                  Bachelor of Science in Infornmation Technology
+                </p>
+              </div>
+              <div class="experience__card">
+                <div class="experience__card-header">
+                  <div class="experience__icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div>
+                    <h4>TripleTen</h4>
+                  </div>
+                </div>
+                <p class="experience__date">September, 2022 - Current</p>
+                <p class="experience__role">
+                  Software Engineering Bootcamp Student
+                </p>
+                <p class="experience__detail">Web Development</p>
+              </div>
+            </div>
+          </div>
+          <div class="experience__divider"></div>
+          <div class="experience__category">
+            <h3 class="experience__category-title">Experience</h3>
+            <div class="experience__grid experience__grid--2x2">
+              <div class="experience__card">
+                <div class="experience__card-header">
+                  <div class="experience__icon">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div>
+                    <h4>McGivor Homes</h4>
+                  </div>
+                </div>
+                <p class="experience__date">August, 2025 - Current</p>
+                <p class="experience__role">Web Developer</p>
+                <p class="experience__detail">Professional Web Development</p>
+              </div>
+              <div class="experience__card">
+                <div class="experience__card-header">
+                  <div class="experience__icon">
+                    <i class="fas fa-desktop"></i>
+                  </div>
+                  <div>
+                    <h4>Data Doctors</h4>
+                  </div>
+                </div>
+                <p class="experience__date">December, 2025 - Current</p>
+                <p class="experience__role">Computer Specialist</p>
+                <p class="experience__detail">Technical Support & Repair</p>
+              </div>
+              <div class="experience__card">
+                <div class="experience__card-header">
+                  <div class="experience__icon">
+                    <i class="fas fa-pizza-slice"></i>
+                  </div>
+                  <div>
+                    <h4>Domino's</h4>
+                  </div>
+                </div>
+                <p class="experience__date">March, 2022 - June, 2025</p>
+                <p class="experience__role">Assistant Manager</p>
+                <p class="experience__detail">Team Leadership & Food Service</p>
+              </div>
+              <div class="experience__card">
+                <div class="experience__card-header">
+                  <div class="experience__icon">
+                    <i class="fas fa-book"></i>
+                  </div>
+                  <div>
+                    <h4>Assistant Teacher</h4>
+                  </div>
+                </div>
+                <p class="experience__date">August, 2019 - April, 2020</p>
+                <p class="experience__role">Teaching & Mentoring</p>
+                <p class="experience__detail">Education</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <p class="projects__subtitle">MY WORK</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects__grid">
+          <div class="projects__card">
+            <div class="projects__icon-wrapper"></div>
+            <div class="projects__card-content">
+              <h3 class="projects__card-title">Project Library</h3>
+              <p class="projects__card-desc">
+                A structural foundation project focusing on semantic HTML5 and
+                clean CSS styling.
+              </p>
+              <div class="projects__tags">
+                <span class="projects__tag">HTML</span>
+                <span class="projects__tag">CSS</span>
+                <span class="projects__tag">Flexbox</span>
+              </div>
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="projects__card">
+            <div class="projects__icon-wrapper"></div>
+            <div class="projects__card-content">
+              <h3 class="projects__card-title">Project Coffee Shop</h3>
+              <p class="projects__card-desc">
+                A cafe landing page featuring interactive web forms and embedded
+                video content.
+              </p>
+              <div class="projects__tags">
+                <span class="projects__tag">Forms</span>
+                <span class="projects__tag">Media</span>
+                <span class="projects__tag">Animations</span>
+                <span class="projects__tag">BEM Methodology</span>
+              </div>
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="projects__card">
+            <div class="projects__icon-wrapper"></div>
+            <div class="projects__card-content">
+              <h3 class="projects__card-title">Project Around The World</h3>
+              <p class="projects__card-desc">
+                A social media style layout emphasizing responsive design
+                principles.
+              </p>
+              <div class="projects__tags">
+                <span class="projects__tag">Responsive Design</span>
+                <span class="projects__tag">CSS Grid</span>
+                <span class="projects__tag">Animation</span>
+              </div>
+              <a
+                href="https://github.com"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+      <div class="container">
+        <p class="hobbies__subtitle">BEYOND CODE</p>
+        <h2 class="section-title">Hobbies & Interests</h2>
+        <div class="hobbies__grid">
+          <div class="hobbies__item">
+            <i class="fas fa-wand-magic-sparkles"></i>
+            <p>Magic: The Gathering</p>
+          </div>
+          <div class="hobbies__item">
+            <i class="fas fa-water"></i>
+            <p>Water Sports</p>
+          </div>
+          <div class="hobbies__item">
+            <i class="fas fa-utensils"></i>
+            <p>Cooking</p>
+          </div>
+          <div class="hobbies__item">
+            <i class="fas fa-dice-d20"></i>
+            <p>TTRPGs</p>
+          </div>
+          <div class="hobbies__item">
+            <i class="fas fa-mountain"></i>
+            <p>Hiking</p>
+          </div>
+          <div class="hobbies__item">
+            <i class="fas fa-microphone"></i>
+            <p>Karaoke</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-card">
+      <p class="contact__subtitle">LET'S CONNECT</p>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact__description">
+        Feel free to reach out for collaborations, opportunities, or just a
+        friendly chat!
+      </p>
+
+      <div class="contact__cards">
+        <a href="tel:5022108984" class="contact__card">
+          <div class="contact__card-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact__card-content">
+            <p class="contact__card-label">Phone</p>
+            <p class="contact__card-value">502-210-8984</p>
+          </div>
+          <i class="fas fa-arrow-up-right contact__card-arrow"></i>
+        </a>
+
+        <a href="mailto:p.vedant7878@gmail.com" class="contact__card">
+          <div class="contact__card-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact__card-content">
+            <p class="contact__card-label">Email</p>
+            <p class="contact__card-value">p.vedant7878@gmail.com</p>
+          </div>
+          <i class="fas fa-arrow-up-right contact__card-arrow"></i>
+        </a>
+
+        <a
+          href="https://github.com/ScorchTrail"
+          target="_blank"
+          class="contact__card"
+        >
+          <div class="contact__card-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="contact__card-content">
+            <p class="contact__card-label">GitHub</p>
+            <p class="contact__card-value">github.com/ScorchTrail</p>
+          </div>
+          <i class="fas fa-arrow-up-right contact__card-arrow"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/scortchtrail/"
+          target="_blank"
+          class="contact__card"
+        >
+          <div class="contact__card-icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="contact__card-content">
+            <p class="contact__card-label">Instagram</p>
+            <p class="contact__card-value">@ScorchTrail</p>
+          </div>
+          <i class="fas fa-arrow-up-right contact__card-arrow"></i>
+        </a>
+      </div>
+
+      <p class="footer__copyright">
+        &copy; 2026 Vedant Patel. All rights reserved.
+      </p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

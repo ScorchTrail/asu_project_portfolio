@@ -1,0 +1,131 @@
+.hobbies {
+  padding: 10rem 1rem;
+  margin-top: 10rem;
+  background-color: var(--white);
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobbies .section-title {
+  color: var(--dark-accent);
+  margin-bottom: 2rem;
+}
+
+.hobbies__subtitle {
+  color: var(--light-accent);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 10rem;
+}
+
+.hobbies__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 10rem;
+}
+
+.hobbies__divider {
+  display: none;
+}
+
+.hobbies__item {
+  background: linear-gradient(
+    135deg,
+    var(--light-accent) 0%,
+    var(--bg-color) 100%
+  );
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.hobbies__item:hover {
+  transform: scale(1.05);
+}
+
+.hobbies__item i {
+  font-size: 2rem;
+  color: var(--dark-accent);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.hobbies__item p {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .hobbies {
+    padding: 3rem 1.5rem 6rem 1.5rem;
+  }
+
+  .hobbies__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 700px;
+  }
+
+  .hobbies__item {
+    padding: 2rem;
+  }
+
+  .hobbies__item i {
+    font-size: 2.5rem;
+  }
+
+  .hobbies__item p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hobbies {
+    padding: 4rem 2rem 6rem 2rem;
+  }
+
+  .hobbies__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 900px;
+  }
+
+  .hobbies__item {
+    padding: 2.5rem;
+  }
+
+  .hobbies__item i {
+    font-size: 3rem;
+  }
+
+  .hobbies__item p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hobbies {
+    padding: 6rem 4rem;
+  }
+
+  .hobbies__grid {
+    max-width: 1100px;
+  }
+
+  .hobbies__item p {
+    font-size: 1.5rem;
+  }
+}

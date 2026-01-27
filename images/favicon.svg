@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="100" fill="#609966"/>
+
+  <!-- Text: VP -->
+  <text x="100" y="130" font-family="'Cinzel Decorative', serif" font-size="90" font-weight="bold" fill="#EDF1D6" text-anchor="middle" dominant-baseline="middle">VP</text>
+</svg>

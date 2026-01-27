@@ -1,0 +1,167 @@
+@media (min-width: 768px) {
+  .navbar__container {
+    padding: 1rem 2rem;
+  }
+
+  .navbar__menu {
+    gap: 2rem;
+  }
+
+  .navbar__link {
+    font-size: 1rem;
+  }
+
+  .main__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .main__profile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .main__age-card {
+    width: 110px;
+    height: 110px;
+  }
+
+  .main__name {
+    font-size: 2.941406rem;
+  }
+
+  .main__headline {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 1.953125rem;
+  }
+
+  .about__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience__layout {
+    grid-template-columns: 0.9fr auto 1.1fr;
+  }
+
+  .experience__divider {
+    min-height: 400px;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hobbies__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__social-links {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main,
+  .about,
+  .skills,
+  .experience,
+  .projects,
+  .hobbies-contact {
+    padding: 4rem 2rem;
+  }
+
+  .main {
+    min-height: 100vh;
+  }
+
+  .main__container {
+    gap: 4rem;
+  }
+
+  .main__profile-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .main__age-card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .main__name {
+    font-size: 3.051757812rem;
+  }
+
+  .main__headline {
+    font-size: 1.25rem;
+  }
+
+  .about__wrapper {
+    gap: 3rem;
+  }
+
+  .skills__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .experience__layout {
+    gap: 3rem;
+  }
+
+  .experience__divider {
+    min-height: 500px;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hobbies__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__social-links {
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main,
+  .about,
+  .skills,
+  .experience,
+  .projects,
+  .hobbies-contact {
+    padding: 6rem 4rem;
+  }
+
+  .section-title {
+    font-size: 3.814697265rem;
+    margin-bottom: 4rem;
+  }
+
+  .main__name {
+    font-size: 3.814697265rem;
+  }
+
+  .main__headline {
+    font-size: 1.5625rem;
+  }
+
+  .main__profile-image {
+    width: 350px;
+    height: 350px;
+  }
+
+  .container {
+    max-width: 1400px;
+  }
+}

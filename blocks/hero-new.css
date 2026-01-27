@@ -1,0 +1,293 @@
+.main {
+  background-color: var(--bg-color);
+  padding: 1rem;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.main__container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.main__content {
+  animation: slideInRight 0.8s ease;
+  order: 2;
+}
+
+.main__image {
+  display: flex;
+  justify-content: center;
+  animation: slideInLeft 0.8s ease;
+  order: 1;
+}
+
+.main__profile-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.main__age-card {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--light-accent);
+  box-shadow: var(--shadow);
+  border: 3px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__age-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--white);
+  font-family: var(--font-heading);
+}
+
+.main__profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid var(--dark-accent);
+  box-shadow: var(--shadow);
+}
+
+.main__name {
+  font-size: 2.441406rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-weight: bold;
+  font-family: var(--font-decorative);
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.main__name--highlight {
+  color: var(--light-accent);
+}
+
+.main__headline {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  line-height: 1.8;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.main__buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-block;
+  border: 2px solid transparent;
+  text-decoration: none;
+}
+
+.btn--primary {
+  background-color: var(--dark-accent);
+  color: var(--white);
+}
+
+.btn--primary:hover {
+  background-color: var(--light-accent);
+  color: var(--dark-accent);
+  transform: translateY(-2px);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--dark-accent);
+  border: 2px solid var(--dark-accent);
+}
+
+.btn--secondary:hover {
+  background-color: var(--dark-accent);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.main__scroll-indicator {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  color: var(--dark-accent);
+  animation: float 3s ease-in-out infinite;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.main__scroll-indicator:hover {
+  transform: translateX(-50%) scale(1.2);
+  color: var(--light-accent);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-15px);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 2rem;
+  }
+
+  .main__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .main__profile-image {
+    width: 250px;
+    height: 250px;
+    border-width: 7px;
+  }
+
+  .main__age-card {
+    width: 110px;
+    height: 110px;
+  }
+
+  .main__age-number {
+    font-size: 2.8rem;
+  }
+
+  .main__name {
+    font-size: 2.941406rem;
+  }
+
+  .main__headline {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .main__buttons {
+    gap: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    padding: 2rem;
+    min-height: 100vh;
+  }
+
+  .main__container {
+    gap: 4rem;
+  }
+
+  .main__profile-image {
+    width: 300px;
+    height: 300px;
+    border-width: 8px;
+  }
+
+  .main__age-card {
+    width: 120px;
+    height: 120px;
+    bottom: -15px;
+    right: -15px;
+  }
+
+  .main__age-number {
+    font-size: 3rem;
+  }
+
+  .main__name {
+    font-size: 3.051757812rem;
+  }
+
+  .main__headline {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    padding: 0.9rem 2.5rem;
+  }
+
+  .main__scroll-indicator {
+    font-size: 2rem;
+    bottom: 2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main {
+    padding: 4rem;
+  }
+
+  .main__profile-image {
+    width: 350px;
+    height: 350px;
+  }
+
+  .main__name {
+    font-size: 3.814697265rem;
+  }
+
+  .main__headline {
+    font-size: 1.5625rem;
+  }
+}

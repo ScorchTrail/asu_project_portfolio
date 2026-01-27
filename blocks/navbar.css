@@ -1,0 +1,73 @@
+/* ===========================
+   NAVIGATION BAR - BEM STRUCTURE
+   =========================== */
+
+.navbar {
+  background-color: var(--bg-color);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__logo-image {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  transition: var(--transition);
+}
+
+.navbar__logo-image:hover {
+  transform: scale(1.1);
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar__link {
+  color: var(--text-color);
+  font-weight: 600;
+  position: relative;
+  transition: var(--transition);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.navbar__link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--light-accent);
+  transition: width 0.3s ease;
+}
+
+.navbar__link:hover {
+  color: var(--dark-accent);
+}
+
+.navbar__link:hover::after {
+  width: 100%;
+}

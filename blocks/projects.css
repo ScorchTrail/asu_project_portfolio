@@ -1,0 +1,240 @@
+.projects {
+  padding: 4rem 1rem 4rem 1rem;
+  background-color: var(--bg-color);
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.projects__subtitle {
+  color: var(--light-accent);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0;
+  margin-top: 6rem;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.projects__card {
+  background: linear-gradient(180deg, #f6faee 60%, var(--white) 100%);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.projects__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(64, 81, 59, 0.18);
+}
+
+.projects__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  background: none;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__card:nth-child(1) .projects__icon-wrapper {
+  background-image: url("../images/inside_the_library.png");
+}
+
+.projects__card:nth-child(2) .projects__icon-wrapper {
+  background-image: url("../images/inside_coffee_shop.png");
+}
+
+.projects__card:nth-child(3) .projects__icon-wrapper {
+  background-image: url("../images/around the world.jpg");
+}
+
+.projects__icon {
+  font-size: 3rem;
+  color: #b7d2b0;
+  opacity: 0.7;
+}
+
+.projects__card-content {
+  background: var(--white);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-radius: 0 0 12px 12px;
+}
+
+.projects__card-title {
+  color: var(--dark-accent);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.projects__card-title--highlight {
+  color: var(--light-accent);
+}
+
+.projects__card-desc {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 0;
+  padding-bottom: 4rem;
+}
+
+.projects__tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.projects__tag {
+  background: #e6f2de;
+  color: var(--dark-accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.25rem 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.projects__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  background-color: var(--dark-accent);
+  color: var(--white);
+  padding: 0.8rem 0;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  width: 100%;
+  margin-top: auto;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.projects__link:hover {
+  background-color: var(--light-accent);
+  color: var(--dark-accent);
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .projects {
+    padding: 3rem 1.5rem;
+    min-height: auto;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .projects__icon-wrapper {
+    height: 240px;
+  }
+
+  .projects__card-title {
+    font-size: 1.25rem;
+  }
+
+  .projects__card-desc {
+    font-size: 1rem;
+  }
+
+  .projects__tag {
+    font-size: 0.85rem;
+    padding: 0.3rem 1rem;
+  }
+
+  .projects__link {
+    padding: 0.9rem 0;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects {
+    padding: 4rem 2rem;
+    min-height: auto;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+
+  .projects__icon-wrapper {
+    height: 240px;
+  }
+
+  .projects__card {
+    border-radius: 18px;
+  }
+
+  .projects__card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .projects__card-desc {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .projects__tag {
+    font-size: 0.95rem;
+    padding: 0.3rem 1rem;
+  }
+
+  .projects__link {
+    padding: 0.9rem 0;
+    font-size: 1.05rem;
+    border-radius: 9px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .projects {
+    padding: 6rem 4rem;
+  }
+
+  .projects__card {
+    border-radius: 20px;
+  }
+
+  .projects__card-title {
+    font-size: 1.5625rem;
+  }
+
+  .projects__card-desc {
+    font-size: 1.1rem;
+  }
+}
